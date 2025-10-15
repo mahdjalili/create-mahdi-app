@@ -1,11 +1,27 @@
 # create-mahdi-app
 
+[![npm version](https://img.shields.io/npm/v/create-mahdi-app.svg)](https://www.npmjs.com/package/create-mahdi-app)
+[![npm downloads](https://img.shields.io/npm/dm/create-mahdi-app.svg)](https://www.npmjs.com/package/create-mahdi-app)
+
 A CLI tool to create Next.js projects with Mahdi's preferred tech stack.
+
+## About
+
+This is a create app tool for creating Mahdi's flavor stack applications in both frontend and backend. I was tired of setting up my preferred tech stack again and again, so I gathered everything into a single CLI command. Now you can bootstrap your entire project with all the tools and configurations I use in just one line of code.
+
+## Requirements
+
+Before using this CLI tool, make sure you have one of the following installed:
+
+-   **Bun** (recommended): Install from [bun.sh](https://bun.sh)
+-   **Node.js**: Version 18 or higher
 
 ## Installation
 
+For npm:
+
 ```bash
-npm create mahdi-app@latest
+npx create-mahdi-app
 ```
 
 Or using Bun:
@@ -14,67 +30,29 @@ Or using Bun:
 bunx create-mahdi-app
 ```
 
-## Usage
-
-```bash
-create-mahdi-app my-app
-```
-
 The CLI will guide you through the setup process with interactive prompts.
-
-## Tech Stack
-
-The generated projects include:
-
--   **Framework**: Next.js 15 with App Router
--   **Runtime**: Bun (enforced)
--   **UI Library**: Material-UI (MUI)
--   **State Management**: Zustand
--   **Data Fetching**: React Query (TanStack Query)
--   **Forms**: Formik + Yup
--   **URL State**: nuqs
--   **HTTP Client**: Axios
--   **Language**: TypeScript
 
 ## Templates
 
 Currently available templates:
 
--   **Frontend**: Next.js with React, Material-UI, and all the above dependencies
+### 🎨 Frontend Template
+
+> **Modern Next.js application with my preferred tech stack**
+
+| Technology            | Purpose                                     |
+| --------------------- | ------------------------------------------- |
+| **Next.js 15**        | Latest React features with App Router       |
+| **Material-UI (MUI)** | Beautiful, accessible UI components         |
+| **TypeScript**        | Type safety and better developer experience |
+| **Bun**               | Fast runtime and package manager            |
+| **Pre-configured**    | All necessary dependencies and setup        |
+
+**✨ What you get:**
+
+-   🚀 Clean, production-ready foundation
+-   ⚡ Zero configuration required
+-   🎯 Ready to start building immediately
+-   🔧 All build systems and routing pre-configured
 
 More templates coming soon (backend, monorepo, etc.).
-
-## Features
-
--   ✅ Interactive CLI with prompts
--   ✅ Bun-first template (enforced in generated projects)
--   ✅ Next.js App Router
--   ✅ Minimal setup (no example pages/components)
--   ✅ Full type safety with TypeScript
--   ✅ Extensible for future templates
-
-## Development
-
-To develop this CLI tool locally:
-
-```bash
-# Clone the repository
-git clone <repository-url>
-cd create-mahdi-app
-
-# Install dependencies
-npm install
-
-# Build the project
-npm run build
-
-# Link globally for testing
-npm link
-
-# Test the CLI
-create-mahdi-app my-test-app
-```
-
-## License
-
-MIT
