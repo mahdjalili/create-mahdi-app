@@ -1,7 +1,4 @@
-# create-mahdi-app
-
-[![npm version](https://img.shields.io/npm/v/create-mahdi-app.svg)](https://www.npmjs.com/package/create-mahdi-app)
-[![npm downloads](https://img.shields.io/npm/dm/create-mahdi-app.svg)](https://www.npmjs.com/package/create-mahdi-app)
+# create-mahdi-app [![npm version](https://img.shields.io/npm/v/create-mahdi-app.svg)](https://www.npmjs.com/package/create-mahdi-app)
 
 A CLI tool to create Next.js projects with Mahdi's preferred tech stack.
 
