@@ -68,7 +68,7 @@ export async function confirmCreation(projectName: string, template: string): Pr
 
 export async function runPrompts(providedName?: string): Promise<PromptAnswers> {
     console.log(chalk.cyan("Welcome to create-mahdi-app! 🚀"));
-    console.log(chalk.gray("This will create a new Next.js project with your preferred tech stack.\n"));
+    console.log(chalk.gray("This is a create app tool for creating Mahdi's flavor stack applications.\n"));
 
     const projectName = providedName || (await getProjectName());
     const template = await selectTemplate();
