@@ -1,6 +1,6 @@
 {
     "name": "create-mahdi-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A CLI tool to create Next.js projects with Mahdi's preferred tech stack",
     "main": "dist/index.js",
     "bin": {
