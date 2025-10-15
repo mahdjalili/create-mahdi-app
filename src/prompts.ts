@@ -40,7 +40,7 @@ export async function selectTemplate(): Promise<string> {
         choices: [
             {
                 title: "Frontend - Next.js",
-                description: "Next.js with React, Material-UI, React Query, Formik, Yup, nuqs, Zustand, Axios",
+                description: "Next.js, Material-UI, React Query, Formik, Yup, nuqs, Zustand, Axios",
                 value: "frontend",
             },
         ],
