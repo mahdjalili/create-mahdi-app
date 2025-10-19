@@ -1,0 +1,29 @@
+services:
+    backend:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: backend-api
+        restart: unless-stopped
+        ports:
+            - "3000:3000"
+        environment:
+            - DATABASE_URL=/app/data/sqlite.db
+            - NODE_ENV=${NODE_ENV:-production}
+            - JWT_SECRET=${JWT_SECRET}
+        env_file:
+            - .env
+        volumes:
+            - backend-data:/app/data
+            - ./logs:/app/logs
+        networks:
+            - backend-network
+
+        command: sh -c "bun run db:migrate && bun run start"
+
+networks:
+    backend-network:
+        driver: bridge
+
+volumes:
+    backend-data:

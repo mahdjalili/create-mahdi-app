@@ -87,10 +87,19 @@ export function getProjectPath(projectName: string, cwd: string = process.cwd())
     return path.join(cwd, projectName);
 }
 
-export function showSuccessMessage(projectName: string, projectPath: string): void {
+export function showSuccessMessage(projectName: string, projectPath: string, template?: string): void {
     console.log(chalk.green("\n✓ Project created successfully!"));
     console.log(chalk.cyan("\nNext steps:"));
     console.log(chalk.white(`  cd ${projectName}`));
-    console.log(chalk.white("  bun dev"));
+
+    if (template === "backend") {
+        console.log(chalk.white("  bun run dev"));
+        console.log(chalk.gray("\n  Don't forget to:"));
+        console.log(chalk.gray("  - Copy .env.example to .env and configure your settings"));
+        console.log(chalk.gray("  - Run 'bun run db:push' to set up the database"));
+    } else {
+        console.log(chalk.white("  bun dev"));
+    }
+
     console.log(chalk.gray("\nHappy coding! 🚀"));
 }

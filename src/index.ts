@@ -65,7 +65,7 @@ async function main() {
             await installDependencies(projectPath);
 
             // Show success message
-            showSuccessMessage(projectName, projectPath);
+            showSuccessMessage(projectName, projectPath, template);
         } catch (error) {
             spinner.fail("Failed to create project");
             console.log(chalk.red(`Error: ${error instanceof Error ? error.message : error}`));

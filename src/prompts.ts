@@ -43,6 +43,16 @@ export async function selectTemplate(): Promise<string> {
                 description: "Next.js, Material-UI, React Query, Formik, Yup, nuqs, Zustand, Axios",
                 value: "frontend",
             },
+            {
+                title: "Backend - Hono + Drizzle",
+                description: "Bun, Hono, Drizzle ORM, SQLite, JWT Authentication, TypeScript",
+                value: "backend",
+            },
+            {
+                title: "Monorepo",
+                description: "Monorepo with Next.js, React Query, Formik, Yup, nuqs, Zustand, Axios",
+                value: "monorepo",
+            },
         ],
         initial: 0,
     });

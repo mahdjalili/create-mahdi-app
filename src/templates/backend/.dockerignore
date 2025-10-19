@@ -1,0 +1,25 @@
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Git
+.git
+.gitignore
+
+# Documentation
+README.md
+*.md
+
+# Database files (will be created in container)
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

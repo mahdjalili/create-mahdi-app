@@ -1,0 +1,25 @@
+{
+    "name": "backend",
+    "module": "src/index.ts",
+    "type": "module",
+    "private": true,
+    "scripts": {
+        "dev": "bun --hot src/index.ts",
+        "start": "bun src/index.ts",
+        "db:generate": "drizzle-kit generate",
+        "db:migrate": "drizzle-kit migrate",
+        "db:push": "drizzle-kit push",
+        "db:studio": "drizzle-kit studio"
+    },
+    "devDependencies": {
+        "@types/bun": "^1.2.23"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "drizzle-orm": "^0.44.6",
+        "hono": "^4.9.10",
+        "drizzle-kit": "^0.31.5"
+    }
+}
